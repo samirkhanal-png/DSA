@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1717690150 source:c:\users\ksami\downloads\my_secret_mission\check_if_the_array_is_sorted\main.cpp
+	<iostream>
+	<vector>
+
