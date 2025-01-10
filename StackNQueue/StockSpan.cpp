@@ -10,6 +10,7 @@ public:
             st.pop();
             spanVal+=(st.top().second);
         }
+        st.push({price,spanVal});
         return spanVal;
     }
 };
