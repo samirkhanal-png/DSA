@@ -3,7 +3,12 @@ public:
     string removeKdigits(string num, int k) {
         string result="";
         int size=num.length();
-        if(size==k)return "0";
+          // number of operation greater than length we return an empty string
+        if(size<= k)   
+            return "0";
+        
+        if(k == 0)
+            return num;
         for(int i=0;i<size;i++){
             while(!result.empty()&&num[i]<result.back()&&k>0){
                 result.pop_back();
