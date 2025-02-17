@@ -28,7 +28,7 @@ public:
             fast=fast->next->next;
         }
         ListNode *newHead=reverse(slow);
-        ListNode* first=head,*second= newHead;
+        ListNode* first=head,*second= newHead; //first=head
         while(first!=NULL&&second!=NULL){
             if(first->val!=second->val) return false;
             first=first->next;
@@ -56,6 +56,7 @@ But we cannot traverse the second half(from last to the middle)
  Given
  1->2->3->2->1->X (In case of odd points the first middle element)
        s     f
+ 
 
  1->2->3->3->2->1->X  (In case of even points the second middle element)
           s        f
@@ -66,9 +67,8 @@ reverse the second half and find its newHead
 1->2->3-------|     (Compare till the element remains in one of the half
           1->2->X
 
-1->2->3--------|
+1->2->3--------|(this is connected here ok remember)
          1->2->3->X
-
 
 
 */
